@@ -385,8 +385,8 @@ h4 {
   }
   
   .experienceCD .box-container {
-    margin-bottom: 10px; /* Reduce space between content blocks */
-    padding-bottom: 25px;
+    margin-bottom: -20px; /* Reduce space between content blocks */
+    padding-bottom: 55px;
   }
   
   .experienceCD .content {
@@ -411,8 +411,8 @@ h4 {
   }
   
   .aboutCard .box-container {
-    margin-bottom: 10px; /* Reduce space between content blocks */
-    padding-bottom: 25px;
+    margin-bottom: -20px; /* Reduce space between content blocks */
+    padding-bottom: 55px;
   }
   
   .aboutCard .content {
