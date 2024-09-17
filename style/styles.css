@@ -350,7 +350,7 @@ h4 {
     justify-content: center;
     height: 100vh;
     top: 10px; /* Adjust as needed */
-    position: absolute;
+    position: relative;
   }
   /* Contact Card adjustments */
   .contactCard {
