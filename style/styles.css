@@ -38,7 +38,7 @@ html, body {
 .rsP {
   background: #f8f9fa; /* Light background for the right side panel */
   padding: 20px;
-  overflow-y: none; /* Enable scrolling if content overflows */
+  overflow: auto; /* Allow scrolling if content overflows */
 }
 
 .welcome-box {
@@ -50,7 +50,6 @@ html, body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   margin: 20px; /* Margin for spacing */
 }
-
 
 .card-body {
   display: flex;
@@ -75,7 +74,7 @@ html, body {
 }
 
 .lsP header img {
-  width: 150px; /* Reduce image size on smaller screens */
+  width: 150px; /* Adjust image size */
   height: auto;
 }
 
@@ -115,9 +114,8 @@ li {
 
 .lsP-buttons {
   display: flex;
-  flex-direction: column; /* Vertical layout on larger screens */
+  flex-direction: column; /* Vertical layout */
 }
-
 
 h4 {
   place-items: top;
@@ -158,7 +156,6 @@ h4 {
   z-index: 2; /* Keep content above the background image */
 }
 
-
 .home-box {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   padding: 20px;
@@ -168,6 +165,7 @@ h4 {
   max-width: 600px;
   text-align: center;
 }
+
 .container {
   position: relative;
   width: 100%;
@@ -236,8 +234,6 @@ h4 {
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-
-
 .contactCard .card-body {
   padding: 20px; /* Adds padding inside the card-body */
 }
@@ -257,8 +253,8 @@ h4 {
 }
 
 .background-image {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -310,186 +306,220 @@ h4 {
   margin: 5px 0;
 }
 
-/* Media Queries for Smaller Screens */
-@media (max-width: 576px) {
-  .avatar {
-    display: none; /* Hide the avatar image on smaller screens */
-  }
+.experienceCD {
+  height: 95vh; /* Set the card body height relative to viewport */
+  padding: 10px;
+  box-sizing: border-box;
+  display: block; /* Allows natural scrolling when content overflows */
+  scroll-behavior: smooth; /* Optional: adds smooth scrolling effect */
+}
 
-  .row {
-    flex-direction: column; /* Stack panels vertically on smaller screens */
-  }
 
-  .lsP {
-    flex: 0 1 15%; /* Make .lsP take up 25% of the viewport height */
-    max-height: 15%; /* Set a maximum height for .lsP */
-    overflow-y: none; /* Allow scrolling if needed */
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
-  }
+/* Small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+  /* Styles for small devices */
 
-  .lsP h3 {
-    text-align: center; /* Center the text within the heading */
-    margin: 0;
+  .center{
+    align-items: center;
+    justify-content: center;
   }
-
-  .rsP {
-    flex: 1; /* Take up the remaining space below .lsP */
-  }
-
-  .Btn-nav {
-    font-size: 1.0em; /* Adjust font size */
-    padding: 8px 12px; /* Add padding */
+  .welcome-box{
+    position: absolute;
+    top: 33%;
   }
 
   .lsP-buttons {
-    flex-direction: row; /* Ensure horizontal layout for buttons */
-    align-items: center; /* Align buttons vertically centered */
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
   }
 
-  .infoCard{
-    height: 100vh; /* Full viewport height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-top: 75px; /* Add some padding at the top */
-    padding-bottom: 70px; /* Add padding at the bottom */
+  .Btn-nav {
+    font-size: 16px;
   }
 
-  /* Ensure the headers are part of the scrollable content */
-  .infoCard h4 {
-    margin-top: 0;
-    padding: 10px 0; /* Add padding for better spacing */
-    text-align: center;
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-    position: relative; /* Keep headers in the normal document flow */
-    z-index: 1; /* Ensure visibility over other content */
-    background-color: rgba(255, 255, 255, 0.9); /* Optional: background color to stand out */
-    width: 100%; /* Ensure it spans the width of the card */
+  .rsP {
+    width: 100%; /* Full width on small devices */
+    margin-top: 20px; /* Optional: Add margin for spacing */
   }
 
-  /* For ensuring the content remains scrollable */
-  .infoCard .box-container {
-    flex: 1;
-    overflow-y: visible; /* Allow content to flow normally */
+  .scrollable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 10px; /* Adjust as needed */
+    position: absolute;
+  }
+  /* Contact Card adjustments */
+  .contactCard {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align children to the bottom */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding inside the card */
+    margin: 0; /* Ensure no margin affects the centering */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: 100vh;
+    padding-bottom: 250px;
   }
 
-  .content {
-    padding: 10px; /* Add padding to the content */
+  /* Scrollable card-body in experienceCard */
+  .experienceCD {
+    max-height: 80vh;
+    width: 90%; /* Make the card width smaller */
+    margin: 0 auto; /* Center the card horizontally */
+    padding: 20px; /* Add padding around the content */
+    font-size: 14px; /* Adjust font size for smaller devices */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow-y: scroll; /* Make the entire card scrollable */
+    position: relative; /* Ensure positioning context is established */
   }
-
-
-  .welcome-box {
-    padding: 10px 10px; /* Further adjust padding for very small screens */
-    margin: 5px auto; /* Center the box with further adjusted margin */
-    max-width: 95%; /* Further increase maximum width for very small screens */
-    background-color:#f9f9f9 ;
-  }
-
-  .center {
-    font-size: 25px; /* Increase font size for very small screens */
-  }
-
   
+  .experienceCD h4 {
+    font-size: 18px; /* Adjust the header size */
+    margin: 0 0 10px 0; /* Remove top margin and space below */
+    padding-top: 30px;
+  }
+  
+  .experienceCD .box-container {
+    margin-bottom: 10px; /* Reduce space between content blocks */
+    padding-bottom: 25px;
+  }
+  
+  .experienceCD .content {
+    padding: 5px; /* Reduce padding inside content sections */
+  }
+
+  .aboutCard {
+    max-height: 80vh;
+    width: 90%; /* Make the card width smaller */
+    margin: 0 auto; /* Center the card horizontally */
+    padding: 20px; /* Add padding around the content */
+    font-size: 14px; /* Adjust font size for smaller devices */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow-y: scroll; /* Make the entire card scrollable */
+    position: relative; /* Ensure positioning context is established */
+  }
+  
+  .aboutCard h4 {
+    font-size: 18px; /* Adjust the header size */
+    margin: 0 0 10px 0; /* Remove top margin and space below */
+    padding-top: 30px;
+  }
+  
+  .aboutCard .box-container {
+    margin-bottom: 10px; /* Reduce space between content blocks */
+    padding-bottom: 25px;
+  }
+  
+  .aboutCard .content {
+    padding: 5px; /* Reduce padding inside content sections */
+  }
 }
 
-@media (max-width: 768px) {
-  .lsP {
-    flex: 0 1 15%; /* Adjust height to be 15% of the viewport height */
-    max-height: 15vh; /* Ensure it doesn't exceed 15% of the viewport height */
-    overflow-y: auto; /* Allow vertical scrolling if content overflows */
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
 
-  .lsP h3 {
-    font-size: 20px; /* Adjust font size for smaller screens */
-  }
-
-  .rsP {
-    position: relative;
-    top: auto;
-    width: 100%;
-    padding: 10px;
-    overflow: auto;
-  }
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  /* Styles for small devices */
 
   .lsP-buttons {
-    flex-direction: row; /* Ensure buttons are laid out horizontally */
-    justify-content: space-around; /* Distribute buttons evenly */
-    margin-top: 10px; /* Adjust margin to ensure buttons are visible */
-  }
-
-  .avatar {
-    display: none; /* Hide avatar on smaller screens */
+    display: flex;
+    flex-direction: conlum;
   }
 
   .Btn-nav {
-    font-size: 16px; /* Adjust font size of buttons */
-    padding: 8px 12px; /* Adjust padding for buttons */
-  }
-
-
-
-  .welcome-box {
-    padding: 10px 15px; /* Adjust padding for smaller screens */
-    margin: 10px auto; /* Center the box with adjusted margin */
-    max-width: 90%; /* Increase maximum width for slightly smaller screens */
-  }
-
-  .center {
-    font-size: 6vw; /* Adjust font size for smaller screens */
-  }
-
-  .home-box {
-    width: 90%;
-    max-width: 400px;
-  }
-
-  .experienceCard {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scrolling outside the card */
-  }
-
-  .experienceCard section {
-    flex: 1; /* Allow the section to grow and fill available space */
-  }
-
-  .experienceCard .card-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensure the card-body takes full height of its container */
-    overflow: hidden; /* Prevent scrolling within the card-body */
-  }
-
-  .experienceCard .box-container {
-    flex: 1; /* Allow it to grow and take available space */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  }
-
-  .content{
-    overflow-y: auto;
-  }
-
-
-}
-
-@media (min-width: 769px) {
-  .lsP {
-    height: 100vh; /* Full height on larger screens */
+    font-size: 16px;
   }
 
   .rsP {
-    margin-left: 0; /* Remove margin to align with .lsP */
+    width: 100%; /* Full width on small devices */
+    margin-top: 20px; /* Optional: Add margin for spacing */
   }
 
-  .card-body {
-    flex-direction: column; /* Ensure column layout on smaller screens */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+  /* Contact Card adjustments */
+  .contactCard {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-end; /* Align children to the bottom */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding inside the card */
+    margin: 0; /* Ensure no margin affects the centering */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    height: 100vh;
+    padding-bottom: 250px;
+  }
+
+  /* Scrollable card-body in experienceCard */
+  .experienceCD.scrollable {
+    max-height: 80vh; /* Reduce the max height */
+    width: 90%; /* Make the card width smaller */
+    margin: 0 auto; /* Center the card horizontally */
+    padding: 10px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size for smaller devices */
+    padding-top: 20px;
+  }
+
+  .experienceCD h4 {
+    font-size: 18px; /* Adjust the header size */
+    margin-bottom: 10px; /* Reduce the space below the header */
+  }
+
+  .experienceCD .box-container {
+    margin-bottom: 10px; /* Reduce space between content blocks */
+  }
+
+  .experienceCD .content {
+    padding: 5px; /* Reduce padding inside content sections */
+  }
+
+  .aboutCard.scrollable {
+    max-height: 80vh; /* Reduce the max height */
+    width: 90%; /* Make the card width smaller */
+    margin: 0 auto; /* Center the card horizontally */
+    padding: 10px; /* Reduce padding */
+    font-size: 14px; /* Adjust font size for smaller devices */
+  }
+
+  .aboutCard h4 {
+    font-size: 18px; /* Adjust the header size */
+    margin-bottom: 10px; /* Reduce the space below the header */
+  }
+
+  .aboutCard .content {
+    padding: 5px; /* Reduce padding inside content sections */
   }
 }
-
-.noneScroll{
-  overflow-y: none;
-  overflow: none;
 }
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  /* Styles for large devices */
+  .lsP {
+      width: 33%; /* Adjust width for large devices */
+  }
+
+  .rsP {
+      width: 67%; /* Adjust width for large devices */
+  }
+
+  /* Other styles for large devices */
+}
+
+/* Extra large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Styles for extra large devices */
+  .lsP {
+      width: 25%; /* Adjust width for extra large devices */
+  }
+
+  .rsP {
+      width: 75%; /* Adjust width for extra large devices */
+  }
+
+  /* Other styles for extra large devices */
+}
+
