@@ -319,6 +319,11 @@ h4 {
 @media (max-width: 575.98px) {
   /* Styles for small devices */
 
+  .top{
+    padding-top: 150px;
+  }
+
+
   .center{
     align-items: center;
     justify-content: center;
