@@ -368,14 +368,15 @@ h4 {
 
   /* Scrollable card-body in experienceCard */
   .experienceCD {
-    max-height: 80vh;
+    max-height:calc(100vh - 120px);
     width: 90%; /* Make the card width smaller */
     margin: 0 auto; /* Center the card horizontally */
-    padding: 20px; /* Add padding around the content */
+    padding-bottom: 20px; /* Add some padding at the bottom to avoid content being cut off */
     font-size: 14px; /* Adjust font size for smaller devices */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     overflow-y: scroll; /* Make the entire card scrollable */
     position: relative; /* Ensure positioning context is established */
+    overflow-y: auto;
   }
   
   .experienceCD h4 {
@@ -394,14 +395,15 @@ h4 {
   }
 
   .aboutCard {
-    max-height: 80vh;
+    max-height: calc(100vh - 120px);
     width: 90%; /* Make the card width smaller */
     margin: 0 auto; /* Center the card horizontally */
-    padding: 20px; /* Add padding around the content */
+    padding-bottom: 20px; /* Add some padding at the bottom to avoid content being cut off */
     font-size: 14px; /* Adjust font size for smaller devices */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     overflow-y: scroll; /* Make the entire card scrollable */
     position: relative; /* Ensure positioning context is established */
+    overflow-y: auto;
   }
   
   .aboutCard h4 {
@@ -418,7 +420,9 @@ h4 {
   .aboutCard .content {
     padding: 5px; /* Reduce padding inside content sections */
   }
+
 }
+
 
 
 /* Medium devices (tablets, 576px and up) */
