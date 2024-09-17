@@ -131,7 +131,6 @@ h4 {
   align-items: center;
   overflow: hidden;
   z-index: 2; /* Ensure the card content is above the background */
-  background-image: url("https://www.shutterstock.com/image-vector/blackwhite-silhouette-grayscale-zeroone-binary-600nw-2252319257.jpg");
 }
 
 .homeCard::before {
@@ -141,6 +140,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: url("https://www.shutterstock.com/image-vector/blackwhite-silhouette-grayscale-zeroone-binary-600nw-2252319257.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
