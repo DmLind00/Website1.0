@@ -36,7 +36,7 @@ html, body {
 }
 
 .rsP {
-  : #f8f9fa; /* Light  for the right side panel */
+  background-color: #f8f9fa; /* Light  for the right side panel */
   padding: 20px;
   overflow: auto; /* Allow scrolling if content overflows */
 }
@@ -318,11 +318,18 @@ h4 {
 /* Small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {
   /* Styles for small devices */
+  
+  .lsP {
+    width: 100%; /* Full width */
+    padding: 0; /* Optional: Remove any padding */
+    margin: 0; /* Optional: Remove any margin */
+  }
 
   .center{
     align-items: center;
     justify-content: center;
   }
+
   .welcome-box{
     position: absolute;
     top: 33%;
@@ -331,7 +338,7 @@ h4 {
   .lsP-buttons {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    justify-content: center;
   }
 
   .Btn-nav {
@@ -431,11 +438,11 @@ h4 {
 
   .lsP-buttons {
     display: flex;
-    flex-direction: conlum;
+    flex-direction: column;
   }
 
   .Btn-nav {
-    font-size: 16px;
+    font-size: 28px;
   }
 
   .rsP {
