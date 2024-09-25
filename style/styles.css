@@ -279,6 +279,31 @@
     .section-bg-1::before{
     background-image: url('../images/AiPicture1.png');
     filter: blur(3px);
+    height: 85vh;
+  }
+
+  .section-bg-2::before{
+    background-image: url('../images/AiPicture2.png');
+    filter: blur(3px);
+    height: 85vh;
+  }
+  
+  .section-bg-3::before{
+    background-image: url('../images/AiPicture3.png');
+    filter: blur(3px);
+    height: 85vh;
+  }
+  
+  .section-bg-4::before{
+    background-image: url('../images/AiPicture4.png');
+    filter: blur(3px);
+    height: 85vh;
+  }
+  
+  .section-bg-5::before{
+    background-image: url('../images/AiPicture5.png');
+    filter: blur(20px);
+    height: 85vh;
   }
 
 
