@@ -252,20 +252,27 @@
       color: black;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
   }
-
+  
   .section {
       height: 85vh;
   }
 
-  .left-container {
-      height: 15vh; /* Set height to 20% of viewport height */
-      position: fixed;
+
+  .overView{
+    display: flex;
+    flex-direction: column;
   }
 
-  .right-container {
-      height: 85vh;
-      scroll-snap-type: y mandatory; /* Enable scroll snapping */
-  }
+  .left-container {
+    flex: 0 0 15vh; /* Fixed height of 15vh */
+    height: 15vh;
+}
+
+.right-container {
+    flex: 1; /* Take up the remaining space */
+    height: 85vh;
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
 
 
   .left-container a, .section {
