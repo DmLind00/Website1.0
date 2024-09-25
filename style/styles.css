@@ -262,7 +262,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    height: 70vh !important; /* Ensure the section takes up the full viewport height */
+    height: 75vh !important; /* Ensure the section takes up the full viewport height */
 }
 
 .overView {
@@ -274,6 +274,7 @@
 .left-container {
     flex: 0 0 15vh !important; /* Fixed height of 15vh */
     height: 15vh !important;
+    position: relative;
 }
 
 .right-container {
