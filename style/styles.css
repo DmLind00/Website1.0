@@ -232,6 +232,12 @@
   fill: #007bff; /* Change fill color on hover */
 }
 
+.checkitOut {
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
 
