@@ -271,7 +271,11 @@
 }
 
 .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5{
-    height: 85vh;
+    width: 100%; /* Adjust the width as needed */
+    height: 85vh; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add padding if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .section-bg-1::before {
