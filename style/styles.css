@@ -262,7 +262,7 @@
   }
 
   .right-container {
-      height: 85vh; /* Set height to 20% of viewport height */
+      max-height: 85vh;
       scroll-snap-type: y mandatory; /* Enable scroll snapping */
   }
 
@@ -297,10 +297,7 @@
   .myTitle {
       font-size: 14px; /* Adjust font size for extra small devices */
   }
-
-  .section{
-        height: 85vh;
-  }
+  
 
   .section-header {
       position: absolute;
