@@ -1,10 +1,7 @@
-
-/* src="https://github.com/DmLind00/WebsiteV1Proj.github.io//public/static/AiPicture1.png" alt="Description of image"> */
-
 .overView {
     display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensure the overview takes up the full height of its parent */
+    flex-direction: row; /* Change to row to align children horizontally */
+    height: 100vh; /* Ensure the overview takes up the full viewport height */
 }
 
 .left-container {
@@ -15,31 +12,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ensure it takes full height */
+  height: 100%; /* Ensure it takes full height of the parent */
+  width: 33%; /* Adjust width as needed */
   overflow-y: auto; /* Allow scrolling if content overflows */
-}
-
-.homeText {
-  font-size: 80px;
-  color: black;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
-}
-
-.myName {
-  font-size: 44px;
-}
-
-.myTitle {
-  font-size: 34px;
-}
-
-.custom-font-size {
-  color: gray; /* Set text color to gray */
-  text-decoration: underline; /* Add underline to text */
-}
-
-.custom-font-size:hover {
-  color: darkgray; /* Optional: Change color on hover */
 }
 
 .right-container {
@@ -47,9 +22,17 @@
   color: white;
   padding: 1rem;
   overflow-y: auto;
-  height: 100vh; /* Ensure it takes full height */
+  height: 100%; /* Ensure it takes full height of the parent */
+  width: 67%; /* Adjust width as needed */
   scroll-snap-type: y mandatory; /* Enable scroll snapping */
 }
+
+.custom-font-size {
+    font-size: 14px; /* Adjust font size for extra small devices */
+    padding: 0px 5px 0px 5px;
+    text-decoration: underline; /* Add underline */
+    color: gray; /* Change text color to gray */
+} 
 
 .right-container::-webkit-scrollbar {
   display: none;
@@ -59,7 +42,7 @@
   background-color: #343a40; /* Dark background color */
   color: white;
   margin-bottom: 1rem;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; /* Adjust height to 85vh */
   padding: 1rem;
   scroll-snap-align: start; /* Snap to the start of each section */
   position: relative; /* Required for the pseudo-element */
@@ -84,28 +67,27 @@
   z-index: -1;
 }
 
-
-.section-bg-1::before{
+.section-bg-1::before {
   background-image: url('../images/AiPicture1.png');
   filter: blur(3px);
 }
 
-.section-bg-2::before{
+.section-bg-2::before {
   background-image: url('../images/AiPicture2.png');
   filter: blur(3px);
 }
 
-.section-bg-3::before{
+.section-bg-3::before {
   background-image: url('../images/AiPicture3.png');
   filter: blur(3px);
 }
 
-.section-bg-4::before{
+.section-bg-4::before {
   background-image: url('../images/AiPicture4.png');
   filter: blur(3px);
 }
 
-.section-bg-5::before{
+.section-bg-5::before {
   background-image: url('../images/AiPicture5.png');
   filter: blur(20px);
 }
@@ -123,7 +105,6 @@
   padding-bottom: 20px;
   object-fit: cover; /* Maintain aspect ratio */
 }
-
 
 .flex-box {
   display: flex;
@@ -163,22 +144,21 @@
   font-size: 40px; /* Adjust the font size as needed */
 }
 
-.contentHeader{
+.contentHeader {
   font-size: 40px;
   padding-right: 10px;
 }
 
-.cardText{
+.cardText {
   font-size: 20px;
 }
-
 
 #section5 {
   display: flex; /* Use Flexbox for alignment */
   flex-direction: column; /* Align items vertically */
   justify-content: flex-start; /* Align items to the top */
   align-items: center; /* Center items horizontally */
-  height: 100vh; /* Full viewport height */
+  height: 100vh; /* Adjust height to 85vh */
   background-color: #f0f0f0; /* Example background color */
   color: #333; /* Example text color */
   padding: 20px; /* Example padding */
@@ -240,9 +220,9 @@
 }
 
 .checkitOut {
-    font-size: 20px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  font-size: 20px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 /* Extra small devices (phones, less than 576px) */
@@ -267,13 +247,13 @@
 
 .overView {
     display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensure the overview takes up the full height of its parent */
+    flex-direction: row;
+    height: 100vh; /* Ensure the overview takes up the full viewport height */
 }
 
 .left-container {
-    flex: 0 0 15vh !important; /* Fixed height of 15vh */
-    height: 15vh !important;
+    flex: 0 0 15vh; /* Fixed height of 15vh */
+    height: 15vh;
     position: fixed; /* Fix the left-container in place */
     top: 0;
     left: 0;
@@ -283,8 +263,10 @@
 }
 
 .right-container {
-    flex: 1 !important; /* Take up the remaining space */
-    height: 85vh !important;
+    flex: 1; /* Take up the remaining space */
+    height: 85vh;
+    margin-top: 15vh; /* Adjust for the fixed left-container */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
 }
 
@@ -338,9 +320,11 @@
   }
 
   .custom-font-size {
-      font-size: 14px; /* Adjust font size for extra small devices */
-      padding: 0px 5px 0px 5px;
-  }
+    font-size: 14px; /* Adjust font size for extra small devices */
+    padding: 0px 5px 0px 5px;
+    text-decoration: underline; /* Add underline */
+    color: gray; /* Change text color to gray */
+}
 
   .myName {
       font-size: 18px; /* Adjust font size for extra small devices */
