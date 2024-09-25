@@ -81,7 +81,7 @@
 
 
 .section-bg-1::before{
-  background-image: url('/images/AiPicture1.png');
+  background-image: url('images/AiPicture1.png');
   filter: blur(3px);
 }
 
