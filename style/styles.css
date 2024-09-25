@@ -242,7 +242,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    height: 80vh; /* Ensure the section takes up the full viewport height */
+    height: 85vh; /* Ensure the section takes up 85vh */
 }
 
 .overView {
@@ -264,10 +264,14 @@
 
 .right-container {
     flex: 1; /* Take up the remaining space */
-    height: 80vh;
+    height: 85vh;
     margin-top: 15vh; /* Adjust for the fixed left-container */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
+}
+
+.section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5{
+    height: 85vh;
 }
 
 .section-bg-1::before {
