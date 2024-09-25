@@ -254,25 +254,32 @@
   }
   
   .section {
-      height: 85vh;
-  }
-
-
-  .overView{
     display: flex;
     flex-direction: column;
+    height: 85vh; /* Ensure the section takes up the full viewport height */
+    }
+
+    .overView {
+        display: flex;
+        flex-direction: column;
+        height: 100%; /* Ensure the overview takes up the full height of its parent */
+    }
+
+    .left-container {
+        flex: 0 0 15vh; /* Fixed height of 15vh */
+        height: 15vh;
+    }
+
+    .right-container {
+        flex: 1; /* Take up the remaining space */
+        height: 85vh;
+        scroll-snap-type: y mandatory; /* Enable scroll snapping */
+    }
+
+    .section-bg-1::before{
+    background-image: url('../images/AiPicture1.png');
+    filter: blur(3px);
   }
-
-  .left-container {
-    flex: 0 0 15vh; /* Fixed height of 15vh */
-    height: 15vh;
-}
-
-.right-container {
-    flex: 1; /* Take up the remaining space */
-    height: 85vh;
-    scroll-snap-type: y mandatory; /* Enable scroll snapping */
-}
 
 
   .left-container a, .section {
