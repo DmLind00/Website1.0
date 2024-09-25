@@ -274,7 +274,12 @@
 .left-container {
     flex: 0 0 15vh !important; /* Fixed height of 15vh */
     height: 15vh !important;
-    position: relative;
+    position: fixed; /* Fix the left-container in place */
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust width as needed */
+    z-index: 1000; /* Ensure it stays on top */
+    background-color: white; /* Ensure it has a background */
 }
 
 .right-container {
