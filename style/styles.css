@@ -262,7 +262,7 @@
   }
 
   .right-container {
-      max-height: 85vh;
+      height: 85vh;
       scroll-snap-type: y mandatory; /* Enable scroll snapping */
   }
 
