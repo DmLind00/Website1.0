@@ -1,6 +1,12 @@
 
 /* src="https://github.com/DmLind00/WebsiteV1Proj.github.io//public/static/AiPicture1.png" alt="Description of image"> */
 
+.overView {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the overview takes up the full height of its parent */
+}
+
 .left-container {
   background-color: #f8f9fa; /* Light background color */
   padding: 1rem;
@@ -256,7 +262,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    height: 80vh; /* Ensure the section takes up the full viewport height */
+    height: 80vh !important; /* Ensure the section takes up the full viewport height */
 }
 
 .overView {
@@ -266,13 +272,13 @@
 }
 
 .left-container {
-    flex: 0 0 15vh; /* Fixed height of 15vh */
-    height: 15vh;
+    flex: 0 0 15vh !important; /* Fixed height of 15vh */
+    height: 15vh !important;
 }
 
 .right-container {
-    flex: 1; /* Take up the remaining space */
-    height: 85vh;
+    flex: 1 !important; /* Take up the remaining space */
+    height: 85vh !important;
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
 }
 
