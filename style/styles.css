@@ -259,6 +259,7 @@
 
   .left-container {
       height: 15vh; /* Set height to 20% of viewport height */
+      position: fixed;
   }
 
   .right-container {
