@@ -256,7 +256,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensure the section takes up the full viewport height */
+    height: 80vh; /* Ensure the section takes up the full viewport height */
 }
 
 .overView {
