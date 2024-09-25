@@ -1,4 +1,6 @@
 
+/* src="https://github.com/DmLind00/WebsiteV1Proj.github.io//public/static/AiPicture1.png" alt="Description of image"> */
+
 .left-container {
   background-color: #f8f9fa; /* Light background color */
   padding: 1rem;
@@ -79,7 +81,7 @@
 
 
 .section-bg-1::before{
-  background-image: url('/public/static/AiPicture1.png');
+  background-image: url('https://github.com/DmLind00/WebsiteV1Proj.github.io//public/static/AiPicture1.png');
   filter: blur(3px);
 }
 
