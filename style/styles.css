@@ -242,7 +242,7 @@
   .section {
     display: flex;
     flex-direction: column;
-    height: 85vh !important; /* Ensure the section takes up the full viewport height */
+    height: 85vh; /* Ensure the section takes up the full viewport height */
 }
 
 .overView {
@@ -378,22 +378,6 @@
   
   .cardText{
       font-size: 8px;
-  }
-
-  #section5 {
-      display: flex; /* Use Flexbox for alignment */
-      flex-direction: column; /* Align items vertically */
-      justify-content: flex-start; /* Align items to the top */
-      align-items: center; /* Center items horizontally */
-      height: 85vh; /* Set height to 85% of viewport height */
-      background-color: #f0f0f0; /* Example background color */
-      color: #333; /* Example text color */
-      padding: 20px; /* Example padding */
-      text-align: center; /* Center text */
-      font-size: 2rem; /* Example font size */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
-      position: relative; /* Ensure absolute positioning of svg-container works */
-      overflow: hidden; /* Ensure content does not overflow */
   }
   
   #section5 .content {
