@@ -80,7 +80,7 @@
 }
 
 
-.section-bg-1::before{
+.section-bg-1{
   background-image: url('images/AiPicture1.png');
   filter: blur(3px);
 }
