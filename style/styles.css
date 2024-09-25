@@ -96,12 +96,12 @@
 }
 
 .section-bg-4::before{
-  background-image: url('./images/AiImage4.png');
+  background-image: url('images/AiImage4.png');
   filter: blur(3px);
 }
 
 .section-bg-5::before{
-  background-image: url('./images/AiImage5.png');
+  background-image: url('images/AiImage5.png');
   filter: blur(20px);
 }
 
