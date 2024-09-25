@@ -46,8 +46,7 @@
 }
 
 .right-container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .section {
@@ -242,6 +241,10 @@
 
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    .right-container::-webkit-scrollbar {
+        display: none;
+      }
 
   .homeText {
       text-align: center;
