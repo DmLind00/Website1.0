@@ -298,6 +298,10 @@
       font-size: 14px; /* Adjust font size for extra small devices */
   }
 
+  .section{
+        height: 85vh;
+  }
+
   .section-header {
       position: absolute;
       top: 10px; /* Adjust as needed */
