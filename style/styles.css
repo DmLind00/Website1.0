@@ -81,7 +81,7 @@
 
 
 .section-bg-1::before{
-  background-image: url('https://github.com/DmLind00/WebsiteV1Proj.github.io/public/static/AiPicture1.png');
+  background-image: url('./public/static/AiPicture1.png');
   filter: blur(3px);
 }
 
