@@ -240,8 +240,6 @@
   }
   
   .section {
-    display: flex;
-    flex-direction: column;
     height: 85vh; /* Ensure the section takes up the full viewport height */
 }
 
@@ -265,7 +263,7 @@
 .right-container {
     flex: 1; /* Take up the remaining space */
     height: 85vh;
-    margin-top: 15vh; /* Adjust for the fixed left-container */
+    margin-top: auto; /* Adjust for the fixed left-container */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
 }
