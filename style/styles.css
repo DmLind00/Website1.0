@@ -240,7 +240,9 @@
   }
   
   .section {
-    height: 85vh; /* Ensure the section takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    height: 80vh; /* Ensure the section takes up the full viewport height */
 }
 
 .overView {
@@ -262,8 +264,8 @@
 
 .right-container {
     flex: 1; /* Take up the remaining space */
-    height: 85vh;
-    margin-top: auto; /* Adjust for the fixed left-container */
+    height: 80vh;
+    margin-top: 15vh; /* Adjust for the fixed left-container */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
 }
@@ -376,6 +378,10 @@
   
   .cardText{
       font-size: 8px;
+  }
+
+  #section5 {
+      height: 85vh; /* Adjust height to 85% of viewport height */
   }
   
   #section5 .content {
