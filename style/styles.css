@@ -281,10 +281,7 @@
         scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
 
-    .container-fluid{
-        overflow: auto;
-    }
-
+    
     .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5 {
         width: 100%; /* Adjust the width as needed */
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
