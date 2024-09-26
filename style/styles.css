@@ -256,7 +256,8 @@
     .overView {
         display: flex;
         flex-direction: row;
-        height: 100dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        height: 82dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        bottom: 0;
         overflow-y: none;
         overflow: none;
     }
