@@ -257,6 +257,8 @@
         display: flex;
         flex-direction: row;
         height: 82dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        position: fixed;
+        overflow: hidden;
     }
 
     .left-container {
