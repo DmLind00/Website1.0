@@ -271,8 +271,8 @@
 
     .right-container {
         flex: 1; /* Take up the remaining space */
-        height: 82dvh; /* Adjust for the fixed left-container equivalent in rem */
-        margin-top: 9.375rem; /* Adjust for the fixed left-container equivalent in rem */
+        height: 82dvh; /* Adjust height to 85vh equivalent in rem */
+        margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
         overflow-y: auto; /* Enable vertical scrolling if content overflows */
         scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
