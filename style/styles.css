@@ -225,6 +225,13 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
+.homeText {
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
 
