@@ -255,7 +255,7 @@
     .overView {
         display: flex;
         flex-direction: row;
-        height: 62.5rem; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        height: 100vh; /* Ensure the overview takes up the full viewport height equivalent in rem */
     }
 
     .left-container {
