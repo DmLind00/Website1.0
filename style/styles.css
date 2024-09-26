@@ -256,7 +256,7 @@
     .overView {
         display: flex;
         flex-direction: row;
-        height: 82dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        height: 100dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
         position: fixed;
         overflow: hidden;
     }
@@ -276,12 +276,10 @@
         height: 82dvh; /* Adjust height to 85vh equivalent in rem */
         width: 100dvw;
         margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
-        overflow: hidden;
-        overflow-y: hidden; /* Enable vertical scrolling if content overflows */
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
         scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
 
-    
     .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5 {
         width: 100%; /* Adjust the width as needed */
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
