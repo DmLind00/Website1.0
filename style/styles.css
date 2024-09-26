@@ -1,3 +1,5 @@
+
+
 .overView {
     display: flex;
     flex-direction: row; /* Change to row to align children horizontally */
@@ -235,32 +237,36 @@
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+    body{
+        overflow: hidden;
+    }
+
     .right-container::-webkit-scrollbar {
         display: none;
     }
-
+    
     .homeText {
         text-align: center;
         font-size: 28px;
         color: black;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
     }
-  
+    
     .section {
         display: flex;
         flex-direction: column;
         height: 82dvh; /* Ensure the section takes up 85vh equivalent in rem */
         width: 100dvw ;
+        overflow: hidden;
     }
-
+    
     .overView {
         display: flex;
         flex-direction: row;
-        height: 100dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
-        position: fixed;
-        overflow: hidden;
+        height: 100%; /* Ensure the overview takes up the full viewport height equivalent in rem */
+        overflow: hidden; /* Prevent scrolling */
     }
-
+    
     .left-container {
         height: 18dvh;
         position: fixed; /* Fix the left-container in place */
@@ -270,16 +276,16 @@
         z-index: 1000; /* Ensure it stays on top */
         background-color: white; /* Ensure it has a background */
     }
-
+    
     .right-container {
         flex: 1; /* Take up the remaining space */
-        height: 82dvh; /* Adjust height to 85vh equivalent in rem */
+        height: 100%; /* Adjust height to 85vh equivalent in rem */
         width: 100dvw;
         margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
         overflow-y: auto; /* Enable vertical scrolling if content overflows */
         scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
-
+    
     .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5 {
         width: 100%; /* Adjust the width as needed */
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
@@ -287,45 +293,45 @@
         padding: 20px; /* Add padding if needed */
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
-
+    
     .section-header {
         /* Add styles if needed */
     }
-
+    
     .section-bg-1::before {
         background-image: url('../images/AiPicture1.png');
         filter: blur(3px);
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
     }
-
+    
     .section-bg-2::before {
         background-image: url('../images/AiPicture2.png');
         filter: blur(3px);
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
     }
-
+    
     .section-bg-3::before {
         background-image: url('../images/AiPicture3.png');
         filter: blur(3px);
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
     }
-
+    
     .section-bg-4::before {
         background-image: url('../images/AiPicture4.png');
         filter: blur(3px);
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
     }
-
+    
     .section-bg-5::before {
         background-image: url('../images/AiPicture5.png');
         filter: blur(20px);
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
     }
-
+    
     .left-container a, .section {
         font-size: 1rem; /* Adjust font size for extra small devices */
     }
-
+    
     .btnContainer {
         display: flex;
         flex-direction: row;
@@ -334,26 +340,26 @@
         padding: 0 !important; /* Override default padding */
         width: 100%; /* Ensure it takes full width */
     }
-
+    
     .headShot {
         display: none; /* Hide image */
     }
-
+    
     .custom-font-size {
         font-size: 14px; /* Adjust font size for extra small devices */
         padding: 0px 5px 0px 5px;
         text-decoration: underline; /* Add underline */
         color: gray; /* Change text color to gray */
     }
-
+    
     .myName {
         font-size: 18px; /* Adjust font size for extra small devices */
     }
-
+    
     .myTitle {
         font-size: 14px; /* Adjust font size for extra small devices */
     }
-
+    
     .section-header {
         position: absolute;
         top: 10px; /* Adjust as needed */
@@ -363,7 +369,7 @@
         text-align: center;
         font-size: 13px; /* Adjust the font size as needed */
     }
-
+    
     .flex-box {
         display: flex;
         justify-content: center;
@@ -376,32 +382,32 @@
         color: black;
         margin: 10px;
     }
-
+    
     .flex-box .left-side {
         flex: 1;
         text-align: left;
         padding-left: 1px;
     }
-  
+    
     .flex-box .right-side {
         flex: 2;
         text-align: center;
         display: flex;
         flex-direction: column;
     }
-
+    
     .contentHeader {
         font-size: 16px;
     }
-  
+    
     .cardText {
         font-size: 8px;
     }
-
+    
     #section5 {
         height: 82dvh; /* Adjust height to 85vh equivalent in rem */
     }
-  
+    
     #section5 .content {
         flex: 1; /* Take up remaining space */
         display: flex; /* Use Flexbox for alignment */
@@ -410,12 +416,12 @@
         align-items: center; /* Center items horizontally */
         height: 82dvh; /* Adjust height to 85vh equivalent in rem */
     }
-  
+    
     #section5 .content p {
         font-size: 1rem; /* Smaller font size for smaller screens */
         max-width: 100%; /* Full width for smaller screens */
     }
-  
+    
     #section5 .svg-container {
         display: flex; /* Use Flexbox for horizontal alignment */
         justify-content: center; /* Center items horizontally */
@@ -425,17 +431,17 @@
         position: absolute; /* Position at the bottom */
         bottom: 0; /* Align to the bottom */
     }
-  
+    
     #section5 .svg-container a {
         margin: 12px 10px; /* Reduce space between SVGs for smaller screens */
     }
-  
+    
     #section5 .svg-container a svg,
     #section5 .svg-container a img {
         width: 50px; /* Smaller width for SVGs on smaller screens */
         height: 50px; /* Smaller height for SVGs on smaller screens */
     }
-
+    
     .checkitOut {
         font-size: 8px;
         color: black;
