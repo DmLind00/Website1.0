@@ -290,7 +290,6 @@
         width: 100%; /* Adjust the width as needed */
         height: 82dvh; /* Adjust the height as needed equivalent in rem */
         margin: 0 auto; /* Center the section horizontally */
-        padding: 20px; /* Add padding if needed */
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
     
