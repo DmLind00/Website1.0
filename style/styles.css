@@ -273,7 +273,6 @@
 
     .right-container {
         flex: 1; /* Take up the remaining space */
-        height: 100%; /* Adjust height to 85vh equivalent in rem */
         width: 100dvw;
         margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
         overflow-y: auto; /* Enable vertical scrolling if content overflows */
