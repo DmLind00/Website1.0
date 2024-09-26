@@ -276,7 +276,7 @@
         height: 82dvh; /* Adjust height to 85vh equivalent in rem */
         width: 100dvw;
         margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
-        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        overflow-y: none; /* Enable vertical scrolling if content overflows */
         scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
 
