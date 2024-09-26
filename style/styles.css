@@ -257,9 +257,7 @@
         display: flex;
         flex-direction: row;
         height: 82dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
-        bottom: 0;
-        overflow-y: none;
-        overflow: none;
+        position: relative;
     }
 
     .left-container {
@@ -278,7 +276,7 @@
         width: 100dvw;
         margin-top: 18dvh; /* Adjust for the fixed left-container equivalent in rem */
         overflow-y: auto; /* Enable vertical scrolling if content overflows */
-        scroll-snap-type: y inline-block; /* Enable scroll snapping */
+        scroll-snap-type: y mandatory; /* Enable scroll snapping */
     }
 
     .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5 {
