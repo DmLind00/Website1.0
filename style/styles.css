@@ -251,14 +251,12 @@
         flex-direction: column;
         height: 82dvh; /* Ensure the section takes up 85vh equivalent in rem */
         width: 100dvw ;
-        overflow: hidden;
     }
 
     .overView {
         display: flex;
         flex-direction: row;
-        height: 100dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
-        overflow: hidden; /* Prevent scrolling */
+        height: 82dvh; /* Ensure the overview takes up the full viewport height equivalent in rem */
     }
 
     .left-container {
