@@ -282,7 +282,7 @@
     }
 
     .container-fluid{
-        overflow: none;
+        overflow: auto;
     }
 
     .section-bg-1, .section-bg-2, .section-bg-3, .section-bg-4, .section-bg-5 {
