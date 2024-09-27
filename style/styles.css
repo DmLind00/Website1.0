@@ -255,7 +255,7 @@
     .section {
         display: flex;
         flex-direction: column;
-        height: 100vh; /* Ensure the section takes up 85vh equivalent in rem */
+        height: 82dvh; /* Ensure the section takes up 85vh equivalent in rem */
         width: 100dvw ;
         overflow: hidden;
     }
