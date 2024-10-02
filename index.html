@@ -76,7 +76,7 @@
       </div>
       <div class="overflow-hidden" style="max-height: 50vh;">
         <div class="container px-5">
-          <img src="/images/me.png" class="img-fluid border rounded-5 shadow-sm mb-4" alt="Example image" width="500" height="500" loading="lazy">
+          <img src="./images/me.png" class="img-fluid border rounded-5 shadow-sm mb-4" alt="Example image" width="500" height="500" loading="lazy">
         </div>
       </div>
     </div>
@@ -200,8 +200,8 @@
   
       // Fetch quotes and authors from their respective files
       Promise.all([
-          fetch('/quotes/quotes.txt').then(response => response.text()),
-          fetch('/quotes/authors.txt').then(response => response.text())
+          fetch('./quotes/quotes.txt').then(response => response.text()),
+          fetch('./quotes/authors.txt').then(response => response.text())
       ]).then(data => {
           const quotes = data[0].split('\n').filter(quote => quote.trim() !== '');
           const authors = data[1].split('\n').filter(author => author.trim() !== '');
