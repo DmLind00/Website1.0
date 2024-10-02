@@ -1,0 +1,76 @@
+ul {
+    list-style-type: none;
+  }
+
+.aboutcardBackground{
+    background-color: aliceblue;
+}
+
+.aboutcardBackground {
+    background-color: aliceblue;
+}
+
+.homecard {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Optional: Add padding for better spacing */
+    color: white; /* Adjust text color for better visibility */
+}
+
+.homecard p {
+    padding: 10px; /* Optional: Add padding to the text */
+    border-radius: 5px; /* Optional: Add border radius to the text background */
+    margin: 0; /* Remove default margin */
+}
+
+.quote {
+    font-family: "DM Serif Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.6rem;
+    color: black;
+    width: 100%; /* Make it responsive */
+    text-align: center; /* Center the text */
+}
+
+.author {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center; /* Center the text */
+}
+
+.quotesSection{
+    text-align: center;
+}
+
+.address {
+    display: inline-block;
+    text-align: center;
+    max-width: 400px; /* Ensure it doesn't exceed the container width */
+}
+
+
+@media (max-width: 600px) {
+
+    .quote{
+        font-size: 1.3rem;
+        width: 300px;
+    }
+
+    .author {
+        font-size: 1.1rem;
+    }
+    
+  }

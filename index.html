@@ -4,134 +4,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 </head>
-<body class="vh-100">
-    <div class="container-fluid h-100">
-        <div class="overView">
-            <div class="col-12 col-md-4 left-container order-1 order-md-1 d-flex flex-column align-items-center justify-content-center">
-                <img class="headShot" src="images/me.png" alt="">
-                <p class="myName">Dimitri Lindsey</p>
-                <p class="myTitle">BIT Full Stack</p>
-                <div class="btnContainer p-3 bg-light rounded">
-                    <a href="#section2" class="mb-2 h-md4 custom-font-size">About</a>
-                    <a href="#section3" class="mb-2 h-md4 custom-font-size">Experience</a>
-                    <a href="#section4" class="mb-2 h-md4 custom-font-size">Portfolio</a>
-                    <a href="#section5" class="mb-2 h-md4 custom-font-size">Contact</a>
-                </div>
+<body style="display: flex; flex-direction: column; text-align: center; ">
+    <section id="fixed-nav">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <h2 class="navbar-brand">Dimitri Lindsey <span>Bit</span></h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                   <li class="nav-item">
+                    <a class="nav-link active" aria-current="home" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="me" href="#me">Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="about" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="about" href="#porfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="about" href="#contact">Contact</a>
+                  </li>
+                </ul>
             </div>
-            <div class="col-12 col-md-8 right-container order-2 order-md-2">
-                <div id="section2" class="section  h-md4 section-bg-2">
-                    <p class="section-header"><strong>About</strong></p>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Me:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">I'm Dimitri Lindsey, I'm 24. I grew up in Nolensville Tennesse, and went to Ravenwood High School.</p>
-                                    <p class="cardText">I lettered in wrestling and pole vaulting while also becoming an Eagle Scout.</p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Education:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">I graduated from Ravenwood High School in 2018.</p>
-                                    <p class="cardText">I'm currently enrolled at Tennessee Technological University, graduating in Fall 2024.</p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">The Website:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">This website uses a mix of HTML, Bootstrap, and CSS.</p>
-                                    <p class="cardText">This is currently a beta version of the website, but there will be another version with React.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="section3" class="section h-md4 section-bg-3">
-                    <p class="section-header"><strong>Experience</strong></p>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Background:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">In high school, we had basic programming and used C++ and Unity.</p>
-                            <p class="cardText">Since then, I have been interested in technology and have gone on to build my custom computer and learn more languages.</p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Languages:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">I can use HTML, CSS, jQuery, React, and Python, and I'm constantly learning more daily. </p>
-                            <p class="cardText">I'm currently learning PHP, Rust, and C#.</p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Programs:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">Github, VS, Git, SQL, are a few of my main programs I use for programming.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="section4" class="section h-md4 section-bg-4">
-                    <p class="section-header"><strong>Portfolio</strong></p>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">CluckHub:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">This was my first dive into programming. A partner and I created a website for online chicken coop monitoring.</p>
-                            <p class="checkitOut"><a href="https://github.com/DmLind00/SmartCoop.github.io">https://github.com/DmLind00/SmartCoop.github.io</a></p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">Down-Tracker:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">This is a project I'm currently working on; I am working with a company through our school to make a down-tracking service.</p>
-                        </div>
-                    </div>
-                    <div class="flex-box mb-2">
-                        <div class="left-side">
-                            <p class="contentHeader">This Website:</p>
-                        </div>
-                        <div class="right-side">
-                            <p class="cardText">This website was a project that showed that I could make a website. This is not the "Final" build, but it's a fun little project to play with.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="section5" class="section h-md4 section-bg-5">
-                    <p class="section-header"><strong>Contact</strong></p>
-                    <div class="content">
-                        <p><strong>Email: </strong><a href="mailto:dmlindsey00@outlook.com">dmlindsey00@outlook.com</a></p>
-                        <p><strong>Phone: </strong><a href="tel:6156019574">615-601-9574</a></p>
-                        <p><strong>Address: </strong>205 Eagles Landing Drive, Cookeville Tn 38501</p>
-                    </div>
-                    <div class="svg-container">
-                        <a href="https://github.com/DmLind00" target="_blank">
-                            <img src="images/github.svg" alt="GitHub" width="40" height="40">
-                        </a>
-                        <a href="https://www.linkedin.com/in/dimitri-lindsey-a5244528a/" target="_blank">
-                            <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
-                        </a>
+        </div>
+    </nav>
+</section>
+
+
+
+  <section id="home">
+    <div class="homecard">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12">
+                    <div class="d-flex flex-column align-items-center">
+                        <p id="quote" class="quote">I'm not a great programmer. I'm just a good programmer with great habits.</p>
+                        <p id="author" class="author">-Kent Beck</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </section>
+
+  <section id="me">
+    <div class="px-4 pt-5 my-5 text-center" >
+      <h2 class="pb-2  text-center">Welcome</h2>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Hello, I'm Dimitri Lindsey, a business information and technology major who will be graduating from Tennessee Tech University in December this year.</p>
+      </div>
+      <div class="overflow-hidden" style="max-height: 50vh;">
+        <div class="container px-5">
+          <img src="/images/me.png" class="img-fluid border rounded-5 shadow-sm mb-4" alt="Example image" width="500" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="about">
+      <div class="container mt-5 px-4 py-5 " id="featured-3">
+           <h2 class="pb-2 text-center">About</h2>
+           <div class="row g-4 py-5 m-0 row-cols-1 row-cols-lg-3">
+             <div class="feature aboutcardBackground">
+               <h3 class="fs-2 text-body-emphasis">Me:</h3>
+               <p>I grew up in Nolensville Tennessee, I became an eagle scout at the age of 16. I lettered in both wrestling and pole vaulting in highscool. Ive since been going to college at TN Tech. </p>
+             </div>
+             <div class="feature col aboutcardBackground">
+               <h3 class="fs-2 text-body-emphasis">The Website:</h3>
+               <p>This website was made using a mixture of html, css, bootstrap, and jQuery. Im am currently learning more and looking forward to applying it here.</p>
+             </div>
+             <div class="feature col aboutcardBackground">
+               <h3 class="fs-2 text-body-emphasis">Hobbies:</h3>
+               <p>I enjoy fishing, hiking, cooking, exploring, photography, programming, learning, music, and tons more.</p>
+             </div>
+           </div>
+         </div>
+   </section>
+
+
+
+    <section id="porfolio">
+      <div class="album py-5 mt-3">
+        <h2 class="pb-2  text-center">Portfolio</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" src="./images/Resume.png" alt="Thumbnail" width="100%" height="225">
+                <div class="card-body">
+                  <p class="card-text">This is my resume built with only html structuring and no css.</p>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='/portfolio/Resume/resume.html'">View</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" src="./images/Cluckhub.png" alt="Thumbnail" width="100%" height="225">
+                <div class="card-body">
+                  <p class="card-text">Cluckhub, this was my first project I made with a partner.</p>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.open('https://dmlind00.github.io/SmartCoop.github.io/', '_blank')">View</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm">
+              <img class="bd-placeholder-img card-img-top" src="./images/DownTracker.png" alt="Thumbnail" width="100%" height="225">
+              <div class="card-body">
+                <p class="card-text">This is a down tracking website me and a partner are currently working on.</p>
+              </div>
+            </div>
+          </div>
+      
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="contact">
+      <div class="container border-top">
+          <h2 class="pb-2 text-center">Contact</h2>
+          <footer class="py-5">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-md-8 col-lg-6 mb-3 text-center">
+                      <h5><span style="font-weight: 700;">Phone Number:</span> <a href="tel:615-601-9573">615-601-9573</a></h5>
+                      <h5><span style="font-weight: 700;">Email: </span><a href="mailto:Dmlindsey00@outlook.com">Dmlindsey00@outlook.com</a></h5>
+                      <h5 class="address"><span style="font-weight: 700;">Address: </span> 205 Eagles Landing Drive Cookeville Tennessee 38501</h5>
+                  </div>
+              </div>
+              <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                  <ul class="list-unstyled d-flex justify-content-center">
+                      <li class="ms-3">
+                          <a class="link-body-emphasis" href="https://x.com/CodeDML" target="_blank" rel="noopener noreferrer">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="ms-3">
+                          <a class="link-body-emphasis" href="https://github.com/DmLind00" target="_blank" rel="noopener noreferrer">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                              </svg>
+                          </a>
+                      </li>
+                      <li class="ms-3">
+                          <a class="link-body-emphasis" href="https://www.linkedin.com/in/dimitri-lindsey-a5244528a/" target="_blank" rel="noopener noreferrer">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                              </svg>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </footer>
+      </div>
+  </section>
+
+
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const quoteElement = document.getElementById('quote');
+      const authorElement = document.getElementById('author');
+      let quotesAndAuthors = [];
+  
+      // Fetch quotes and authors from their respective files
+      Promise.all([
+          fetch('/quotes/quotes.txt').then(response => response.text()),
+          fetch('/quotes/authors.txt').then(response => response.text())
+      ]).then(data => {
+          const quotes = data[0].split('\n').filter(quote => quote.trim() !== '');
+          const authors = data[1].split('\n').filter(author => author.trim() !== '');
+          
+          // Combine quotes and authors into pairs
+          quotesAndAuthors = quotes.map((quote, index) => ({
+              quote: quote,
+              author: authors[index] || 'Unknown' // Handle case where there might be more quotes than authors
+          }));
+  
+          displayRandomQuoteAndAuthor();
+          cycleQuotesAndAuthors();
+      });
+  
+      // Function to display a random quote and author
+      function displayRandomQuoteAndAuthor() {
+          if (quotesAndAuthors.length > 0) {
+              const randomIndex = Math.floor(Math.random() * quotesAndAuthors.length);
+              quoteElement.textContent = quotesAndAuthors[randomIndex].quote;
+              authorElement.textContent = quotesAndAuthors[randomIndex].author;
+          }
+      }
+  
+      // Function to cycle through quotes and authors
+      function cycleQuotesAndAuthors() {
+          let currentIndex = Math.floor(Math.random() * quotesAndAuthors.length);
+          if (quotesAndAuthors.length > 0) {
+              setInterval(() => {
+                  quoteElement.textContent = quotesAndAuthors[currentIndex].quote;
+                  authorElement.textContent = quotesAndAuthors[currentIndex].author;
+                  currentIndex = (currentIndex + 1) % quotesAndAuthors.length;
+              }, 7000); // Change quote and author every 5 seconds
+          }
+      }
+  });
+  </script>
 </html>

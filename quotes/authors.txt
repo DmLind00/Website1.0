@@ -1,0 +1,35 @@
+-Edward V Berard
+-Eric S. Raymond
+-Linus Torvalds
+-W. Edwards Demming
+-Yoggi Berra
+-Jim McCarthy
+-Randall E. Stross
+-Donald Knuth
+-Larry Wall
+-Linus Torvalds
+-Martin Golding
+-Fred Brooks
+-Martin Fowler
+-Michael Sinz
+-Gerald Weinberg
+-Brian W. Kernighan
+-Jamie Zawinski
+-Frank Lloyd Wright
+-Tom Cargill
+-Bjarne Stroustrup
+-Ward Cunningham
+-Linus Torvalds
+-Albert Einstein
+-Unknown
+-Arthur C. Clarke
+-Grace Hopper
+-Kimber Lockhart
+-Katherine Johnson
+-Steve Wozniak
+-Ken Thompson
+-Stewart Brand
+-Alan Kay
+-Kent Beck
+-Grady Booch
+-Kent Beck
