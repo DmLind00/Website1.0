@@ -24,7 +24,7 @@
     <section id="fixed-nav">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <h2 class="navbar-brand">Dimitri Lindsey <span>Bit</span></h2>
+            <h2 class="navbar-brand">Dimitri Lindsey</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,7 +72,7 @@
     <div class="px-4 pt-5 my-5 text-center" >
       <h2 class="pb-2  text-center">Welcome</h2>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Hello, I'm Dimitri Lindsey, a business information and technology major who will be graduating from Tennessee Tech University in December this year.</p>
+        <p class="lead mb-4">Hello, I'm Dimitri Lindsey, a business information and technology major who will be graduating from Tennessee Tech University in December 2024.</p>
       </div>
       <div class="overflow-hidden" style="max-height: 50vh;">
         <div class="container px-5">
@@ -135,7 +135,7 @@
             <div class="card shadow-sm">
               <img class="bd-placeholder-img card-img-top" src="./images/DownTracker.png" alt="Thumbnail" width="100%" height="225">
               <div class="card-body">
-                <p class="card-text">This is a down tracking website me and a partner are currently working on.</p>
+                <p class="card-text">This is a down tracking website my classmate and I are currently programming for a local business.</p>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@
 
     <section id="contact">
       <div class="container border-top">
-          <h2 class="pb-2 text-center">Contact</h2>
+          <h2 class="pb-2 text-center mt-4">Contact</h2>
           <footer class="py-5">
               <div class="row justify-content-center">
                   <div class="col-12 col-md-8 col-lg-6 mb-3 text-center">
@@ -186,6 +186,7 @@
           </footer>
       </div>
   </section>
+  
 
 
 
@@ -209,7 +210,7 @@
           // Combine quotes and authors into pairs
           quotesAndAuthors = quotes.map((quote, index) => ({
               quote: quote,
-              author: authors[index] || 'Unknown' // Handle case where there might be more quotes than authors
+              author: authors[index] || 'Unknown'
           }));
   
           displayRandomQuoteAndAuthor();
@@ -233,7 +234,7 @@
                   quoteElement.textContent = quotesAndAuthors[currentIndex].quote;
                   authorElement.textContent = quotesAndAuthors[currentIndex].author;
                   currentIndex = (currentIndex + 1) % quotesAndAuthors.length;
-              }, 7000); // Change quote and author every 5 seconds
+              }, 7000);
           }
       }
   });
